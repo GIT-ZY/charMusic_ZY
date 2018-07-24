@@ -1,0 +1,144 @@
+.weather img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.list-enter-active,
+.list-leave-active {
+    transition: all 1s;
+}
+
+.list-enter, 
+.list-leave-to
+/* .fade-leave-active below version 2.1.8 */
+
+    {
+        transform: translateX(900px);
+    opacity: 0;
+}
+
+
+/* 机器人 */
+li {
+    list-style: none;
+}
+.robot img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.list-enter-active,
+.list-leave-active {
+    transition: all 1s;
+}
+
+.list-enter,
+.list-leave-to
+/* .fade-leave-active below version 2.1.8 */
+
+    {
+    transform: translateX(900px);
+    opacity: 0;
+}
+
+
+/* 音乐播放 */
+.music {
+    height: 500px;
+    display: flex;
+}
+
+.music .left {
+    width: 500px;
+    background-color: skyblue;
+    overflow-y: scroll;
+}
+
+.music .left input {
+    display: block;
+    margin: 10px auto;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    width: 400px;
+    padding-left: 20px;
+}
+
+.music .left ul {
+    list-style: none;
+}
+
+.music .left ul li {
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.music .left ul li:hover {
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    background-color: hotpink;
+    transition: all 1s;
+}
+
+
+.music .right {
+    flex: 1;
+    background-color: greenyellow;
+}
+
+.music .right img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    display: block;
+    margin: 10px auto 0;
+}
+
+.music .right audio {
+    display: block;
+    margin: 0 auto;
+}
+
+.auto-rotate {
+    animation: rotate linear infinite 3s;
+}
+
+@keyframes rotate {
+    from {}
+    50% {
+        transform: rotateZ(180deg) scale(1.1, 1.1);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+
+.list-enter-active,
+.list-leave-active {
+    transition: all .5s;
+}
+
+.list-enter,
+.list-leave-to
+/* .fade-leave-active below version 2.1.8 */
+
+    {
+    transform: translateX(300px);
+    opacity: 0;
+}
+
+
+  /* 点击暂停 */
+.auto-rotate {
+    animation: rotate linear infinite 3s;
+    animation-play-state: paused;
+}
+
+  /* 点击播放 */
+.play {
+    animation-play-state: running;
+}
